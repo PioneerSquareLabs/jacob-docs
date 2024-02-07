@@ -1,91 +1,82 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "JACoB Documentation",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#0043FF",
+    "light": "#FFFAF6",
+    "dark": "#191818",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#FF8EB0",
+      "to": "#FFA100"
     }
   },
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:kevin@psl.com"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Get Started",
+    "url": "https://www.jacb.ai"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
+  "tabs": [],
   "anchors": [
     {
       "name": "Documentation",
       "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "url": "https://docs.jacb.ai"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "name": "Website",
+      "icon": "globe",
+      "url": "https://www.jacb.ai"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Overview",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "overview/introduction",
+        "overview/key-features",
+        "overview/getting-started"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Installation & Setup",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "installation/system-requirements",
+        "installation/guide",
+        "installation/configuration-customization"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Core Concepts",
       "pages": [
-        "api-reference/introduction"
+        "core-concepts/ai-engine",
+        "core-concepts/workflow",
+        "core-concepts/adaptive-ai-coding",
+        "core-concepts/security-privacy"
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "User Guides",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "user-guides/project-setup",
+        "user-guides/github-integration",
+        "user-guides/figma-integration",
+        "user-guides/code-management"
       ]
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "twitter": "https://twitter.com/kleneway",
+    "github": "https://github.com/PioneerSquareLabs/jacob-ai-website",
+    "linkedin": "https://www.linkedin.com/company/PioneerSquareLabs"
   }
 }

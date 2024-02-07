@@ -1,0 +1,33 @@
+{
+  "language": "TypeScript",
+  "installCommand": "npm install",
+  "buildCommand": "npm run build --verbose",
+  "style": "CSS",
+  "iconSet": "Font Awesome",
+  "componentExamples": "/src/components/ExampleComponent.js",
+  "apiEndpointsExamples": "/src/api/exampleEndpoint.js",
+  "pageExamples": "/src/pages/ExamplePage.js",
+  "directories": {
+    "components": "/src/components",
+    "pages": "/src/pages",
+    "types": "/src/types",
+    "styles": "/src/styles",
+    "staticAssets": "/public/assets"
+  },
+  "stateManagement": {
+    "tool": "Redux",
+    "storeLocation": "/src/store"
+  },
+  "testing": {
+    "writeTests": true,
+    "testFramework": "Jest"
+  },
+  "storybook": {
+    "writeStories": true,
+    "storiesLocation": "/src/stories"
+  },
+  "envVariables": {
+    "exampleFile": "/.env.example"
+  },
+  "env": ""
+}
