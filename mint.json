@@ -54,24 +54,6 @@
         "installation/guide",
         "installation/configuration-customization"
       ]
-    },
-    {
-      "group": "Core Concepts",
-      "pages": [
-        "core-concepts/ai-engine",
-        "core-concepts/workflow",
-        "core-concepts/adaptive-ai-coding",
-        "core-concepts/security-privacy"
-      ]
-    },
-    {
-      "group": "User Guides",
-      "pages": [
-        "user-guides/project-setup",
-        "user-guides/github-integration",
-        "user-guides/figma-integration",
-        "user-guides/code-management"
-      ]
     }
   ],
   "footerSocials": {

@@ -1,0 +1,84 @@
+---
+title: Installation Guide
+description: "Step-by-step instructions to install JACoB and integrate it into your development workflow."
+---
+
+# Getting Started with JACoB
+
+There are three main steps to get started with JACoB. This guide will walk you through the process of installing the JACoB AI Bot GitHub application, setting up your JACoB configuration, and installing the JACoB Figma plugin. It usually takes about 5-10 minutes to install and configure.
+
+<Warning>
+
+Currently, JACoB is in a limited beta preview. While JACoB has the potential to work across any codebase, we've initially focused on a limited number of languages and frameworks. Specifically, **JACoB works best with a TypeScript Next.js application using Tailwind**. More languages and frameworks are coming soon!
+
+</Warning>
+## Step 1: Install the JACoB AI Bot GitHub Application
+
+To begin, you need to install the JACoB AI Bot on your GitHub account. This bot will work with your repositories to automate coding tasks, review code, and manage pull requests.
+
+1. Go to [JACoB AI Bot GitHub App](https://github.com/apps/jacob-ai-bot).
+2. Install the application and grant it permission to access the repositories you want to use with JACoB.
+
+<Card
+  title="GitHub App"
+  icon="link"
+  href="https://github.com/apps/jacob-ai-bot"
+  target="__blank"
+>
+  Click here to install the GitHub App
+</Card>
+
+<Note>
+
+When the GitHub app is installed, JACoB will run a quick diagnostic and post a status as a GitHub issue. Please check the issue to identify any specific problems that need to be addressed or to confirm if the check passed successfully.
+
+</Note>
+
+## Step 2: Set Up Your JACoB Configuration
+
+Next, you need to run the JACoB custom setup command to create a `jacob.config` file in your repository. This configuration file allows JACoB to understand your project’s specific needs and any environment variables essential for building the app.
+
+1. Run the JACoB custom setup command in your project directory and answer the questions. You can always edit this later if needed.
+   ```bash
+   npx jacob-setup create
+   ```
+2. A `jacob.config` file will be created. Open it and fill in the necessary details to customize it to your project.
+3. Be sure to add any .env placeholder variables to the config file, as JACoB will need these to build the application (similar to a CI system). Here’s an example structure:
+   ```json
+   {
+     "env": {
+       "NODE_ENV": "",
+       "NEXTAUTH_SECRET": "NEXTAUTH_SECRET",
+       "GITHUB_ID": "GITHUB_ID",
+       "GITHUB_SECRET": "GITHUB_SECRET",
+       "EMAIL_FROM": "EMAIL_FROM",
+       "DATABASE_URL": "file:./db.sqlite",
+       "NEXTAUTH_URL": "http://localhost:3000"
+     }
+   }
+   ```
+   **Note**: Ensure that you never commit real secret keys. Use placeholders for standard build variables and replace them with actual values in your secure environment.
+
+<Card
+  title="Configuration Options"
+  icon="gears"
+  href="/installation/configuration-customization"
+>
+  Learn more about each of the JACoB configuration options and how to customize
+  the `jacob.config` file.
+</Card>
+
+## Step 3: Install the JACoB Figma Plugin
+
+JACoB can convert your Figma designs into code, making the design-to-development process smoother.
+
+Install the JACoB Figma plugin from [Figma Community](https://www.figma.com/community/plugin/1326684504185921461/jacob-ai-codegen-connector).
+
+<Card
+  title="Figma Plugin"
+  icon="link"
+  href="https://www.figma.com/community/plugin/1326684504185921461/jacob-ai-codegen-connector"
+  target="__blank"
+>
+  Click here to install the Figma Plugin
+</Card>
