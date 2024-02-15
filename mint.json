@@ -44,7 +44,8 @@
       "pages": [
         "overview/introduction",
         "overview/key-features",
-        "overview/getting-started"
+        "overview/getting-started",
+        "overview/quickstart"
       ]
     },
     {
