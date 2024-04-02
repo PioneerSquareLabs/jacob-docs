@@ -1,0 +1,27 @@
+---
+title: GitHub Integration
+description: "Learn how JACoB uses GitHub to integrate into your workflows."
+---
+
+JACoB is designed to interact with you and your team using GitHub issues and pull requests. JACoB will respond to a variety of commands in the body or comments of GitHub issues and pull requests. Each command begins with `@jacob-ai-bot` and will trigger a corresponding task.
+
+### @jacob-ai-bot
+
+- If this appears in the body of a new issue, JACoB will evalute the issue body and, if possible, commit code in a new pull request.
+  - If the issue includes `=> filename.extension` in the title, JACoB will start by creating a new file with that filename in the pull request.
+- If this appears in the body of a pull request review, JACoB will attempt to address the review comments and commit code to the pull request branch.
+- Currently, this is only supported for JavaScript or TypeScript projects.
+
+### @jacob-ai-bot build
+
+- Can appear in an issue or pull request comment (not in the body).
+- Triggers a build to ensure that JACoB can build the repo.
+- Currently, this is only supported for JavaScript or TypeScript projects. This command can be useful when verifying changes to the `jacob.json` settings file in your repo.
+
+### @jacob-ai-bot fix error
+
+- Can appear in a pull request body or comment (not in an issue body or comment).
+- JACoB will look in the same body or comment for a blockquote below the heading `## Error Message` to understand what errors need to be fixed.
+- JACoB will commit code in the pull request branch in an attempt to fix the error.
+- If the updated code fails to build or (optionally) pass its tests, it will comment on the pull request with another `@jacob-ai-bot fix error` command.
+- Currently, this is only supported for JavaScript or TypeScript projects.

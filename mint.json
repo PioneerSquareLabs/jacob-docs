@@ -55,6 +55,12 @@
         "installation/guide",
         "installation/configuration-customization"
       ]
+    },
+    {
+      "group": "Guides",
+      "pages": [
+        "user-guides/github-integration"
+      ]
     }
   ],
   "footerSocials": {
